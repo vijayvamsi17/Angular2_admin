@@ -1,0 +1,35 @@
+
+<form name="form" class="form-horizontal"  (ngSubmit)="save()" #f="ngForm" novalidate>
+
+  <div class="form-group row">
+   <label for="category.id" class="col-sm-2 form-control-label">Id</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" name="category.id" id="this.category.name" placeholder="Id" [(ngModel)]="category.id"  #category.id="ngModel">
+    </div>
+  </div>
+
+  <div class="form-group row">
+   <label for="category.name" class="col-sm-2 form-control-label">Name</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" name="category.name" id="this.category.name" placeholder="name" [(ngModel)]="category.name"  #category.name="ngModel">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="description" class="col-sm-2 form-control-label">Description</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="description" name="category.description" placeholder="description"  [(ngModel)]="this.category.description" #category.description="ngModel">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="Image" class="col-sm-2 form-control-label">Image</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="image" placeholder="image" name="category.image" [(ngModel)]="this.category.image" #category.image="ngModel">
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <div class="offset-sm-2 col-sm-10">
+      <button type="submit" class="btn btn-warning" >Save</button>
+    </div>
+  </div>
+</form>
